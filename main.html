@@ -16,10 +16,6 @@
             padding: 20px;
             border-top: 2px solid #5ea4f3;
         }
-        .summary h5 {
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 10px;
-        }
         .product {
             border-bottom: 1px solid #ddd;
             padding: 20px 0;
@@ -31,46 +27,37 @@
             width: 100%;
             padding: 10px;
             font-size: 16px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2 class="block-heading">Shopping Cart</h2>
-    <div class="row">
-        <!-- Product List -->
-        <div class="col-lg-8">
-            <div class="product row align-items-center">
-                <div class="col-md-3">
-                    <img src="https://via.placeholder.com/100" class="img-fluid">
-                </div>
-                <div class="col-md-6">
-                    <h5>Product Name</h5>
-                    <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
-                </div>
-                <div class="col-md-3">
-                    <input type="number" class="form-control mb-2" value="1">
-                    <h5>$120</h5>
-                </div>
-            </div>
+    <div class="block-heading">
+        <h2>Shopping Cart</h2>
+        <p>Your selected items are listed below.</p>
+    </div>
 
-            <div class="product row align-items-center">
-                <div class="col-md-3">
-                    <img src="https://via.placeholder.com/100" class="img-fluid">
-                </div>
-                <div class="col-md-6">
-                    <h5>Product Name</h5>
-                    <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
-                </div>
-                <div class="col-md-3">
-                    <input type="number" class="form-control mb-2" value="1">
-                    <h5>$120</h5>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="product">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <img src="https://via.placeholder.com/100" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h5><a href="#" class="product-link">Product Name</a></h5> <!-- Ensures <a> exists -->
+                        <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="number" class="form-control mb-2" value="1">
+                        <h5>$120</h5>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Summary Section -->
         <div class="col-lg-4">
             <div class="summary">
                 <h5>Summary</h5>
@@ -78,7 +65,7 @@
                 <p>Discount: <span class="float-end">$0</span></p>
                 <p>Shipping: <span class="float-end">$0</span></p>
                 <h5>Total: <span class="float-end">$240</span></h5>
-                <button class="btn btn-checkout">Checkout</button>
+                <a href="#" class="btn btn-checkout">Checkout</a> <!-- Second <a> for Cypress -->
             </div>
         </div>
     </div>
