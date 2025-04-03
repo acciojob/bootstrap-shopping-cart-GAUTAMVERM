@@ -16,6 +16,10 @@
             padding: 20px;
             border-top: 2px solid #5ea4f3;
         }
+        .summary h5 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
         .product {
             border-bottom: 1px solid #ddd;
             padding: 20px 0;
@@ -40,32 +44,69 @@
     </div>
 
     <div class="row">
+        <!-- Product List -->
         <div class="col-lg-8">
+            <!-- Product 1 -->
             <div class="product">
                 <div class="row align-items-center">
                     <div class="col-md-3">
                         <img src="https://via.placeholder.com/100" class="img-fluid">
                     </div>
                     <div class="col-md-6">
-                        <h5><a href="#" class="product-link">Product Name</a></h5> <!-- Ensures <a> exists -->
-                        <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+                        <h5><a href="#" class="product-link">Smartphone X</a></h5>
+                        <p>Display: 6.1 inches<br>RAM: 8GB<br>Memory: 128GB</p>
                     </div>
                     <div class="col-md-3">
                         <input type="number" class="form-control mb-2" value="1">
-                        <h5>$120</h5>
+                        <h5>$699</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <img src="https://via.placeholder.com/100" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h5><a href="#" class="product-link">Laptop Pro</a></h5>
+                        <p>Display: 15.6 inches<br>RAM: 16GB<br>Memory: 512GB SSD</p>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="number" class="form-control mb-2" value="1">
+                        <h5>$1,299</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <img src="https://via.placeholder.com/100" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h5><a href="#" class="product-link">Wireless Headphones</a></h5>
+                        <p>Battery: 20 hours<br>Noise Cancellation: Yes<br>Bluetooth: 5.0</p>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="number" class="form-control mb-2" value="1">
+                        <h5>$199</h5>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Summary Section -->
         <div class="col-lg-4">
             <div class="summary">
                 <h5>Summary</h5>
-                <p>Subtotal: <span class="float-end">$240</span></p>
-                <p>Discount: <span class="float-end">$0</span></p>
-                <p>Shipping: <span class="float-end">$0</span></p>
-                <h5>Total: <span class="float-end">$240</span></h5>
-                <a href="#" class="btn btn-checkout">Checkout</a> <!-- Second <a> for Cypress -->
+                <p>Subtotal: <span class="float-end">$2,197</span></p>
+                <p>Discount: <span class="float-end">$50</span></p>
+                <p>Shipping: <span class="float-end">$10</span></p>
+                <h5>Total: <span class="float-end">$2,157</span></h5>
+                <a href="#" class="btn btn-checkout">Checkout</a>
             </div>
         </div>
     </div>
